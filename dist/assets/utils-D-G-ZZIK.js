@@ -1,0 +1,1 @@
+var e=e=>String(e||``).toLowerCase().normalize(`NFKD`).replace(/[̀-ͯ]/g,``).replace(/[^a-z0-9]+/g,`-`).replace(/^-+/,``).slice(0,120),t=(e=`s`)=>`${e}_${Array.from(crypto.getRandomValues(new Uint8Array(6)),e=>e.toString(16).padStart(2,`0`)).join(``)}`,n=e=>JSON.parse(JSON.stringify(e));export{t as n,e as r,n as t};
